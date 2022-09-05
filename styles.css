@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
 
-body{
-    margin: 0;
-    overflow-x: hidden;
+.bodyy {
+    background-color: #ebe6e6;
 }
 
-.row{
+.container{
+    width: 80%;
+    margin: auto;
     text-align: center;
 }
 
@@ -15,4 +16,28 @@ body{
     padding-top: 20px;
     font-size: 4rem;
     font-weight: bold;
+    color: black;
+    padding: 2% 5%;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1% 5%;
+}
+
+.p1{
+    color: red;
+}
+.p2{
+    color: blue;
+}
+
+h1{
+    color: green;
+}
+
+.btns{
+    text-align: center;
+    margin-top: 8%;
 }
