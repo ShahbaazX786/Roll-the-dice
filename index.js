@@ -18,11 +18,21 @@ document.querySelector(".img1").setAttribute("src","images/dice"+randomNumber1+"
 document.querySelector(".img2").setAttribute("src","images/dice"+randomNumber2+".png");
 
 var winner=win(randomNumber1,randomNumber2);
-if(winner>=1){
+if(winner===1){
+    document.querySelector(".title").classList.add("red");
+    document.querySelector(".title").innerHTML="player "+winner+" won";
+}
+else if(winner===2){
+    document.querySelector(".title").classList.add("blue");
     document.querySelector(".title").innerHTML="player "+winner+" won";
 }
 else{
     document.querySelector(".title").innerHTML="Oh Boy, It's a draw!";
+    document.querySelector(".title").classList.add("green");
 }
 
 // ps: Im using all the things i learnt in javascript and DOM manupulation
+
+function reload(){
+    window.location.reload();
+}
